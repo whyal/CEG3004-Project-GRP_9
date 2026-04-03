@@ -122,5 +122,5 @@ model = Pipeline([
 As a comparison, the macro F1 score of the baseline classification pipeline is ~0.4068, whereas our improved pipeline achieved a macro F1 score of ~0.6315.
 
 ## Generated Files from the pipeline
-* `Pr_9_model.joblib` — saved trained model
-* `Pr_9_predictions.csv` — predictions on submission set
+* `Pr_9_model.joblib`: trained model
+* `Pr_9_predictions.csv`: predictions on validation set
