@@ -121,6 +121,34 @@ model = Pipeline([
 
 As a comparison, the macro F1 score of the baseline classification pipeline is ~0.4068, whereas our improved pipeline achieved a macro F1 score of ~0.6315.
 
-## Generated Files from the pipeline
-* `Pr_9_model.joblib`: trained model
-* `Pr_9_predictions.csv`: predictions on validation set
+## How to Run on Google Colab (Recommended)
+
+This project is optimized to run on `Google Colab`, which provides a free, cloud-based Jupyter notebook environment. No local setup or installation is required!
+
+### Step 1: Open the Notebook in Colab
+1. Download `CEG3004_Project_Colab_Pr_9.ipynb` notebook in this GitHub repo.
+2. Navigate to [Google Colab](https://colab.research.google.com/).
+3. Upload the downloaded notebook to Colab via the **Upload** tab.
+
+### Step 2: Run the Setup Cells
+Once the notebook is open, click the **"Run"** button (play icon) next to each cell sequentially, or press `Shift + Enter`.
+* Run the **Setup** cell to install all required libraries.
+
+### Step 3: Get the Dataset
+The notebook includes a cell that attempts to automatically download and extract the dataset using `gdown`. Run this cell.
+
+> ** Troubleshooting the Download (Rate Limits):** > Because the file is hosted on Google Drive, you might encounter a `FileURLRetrievalError` ("Too many users have viewed or downloaded this file recently"). If this happens:
+> 1. Manually download the `CEG3004_Project_Data.zip` file using the link provided in the notebook.
+> 2. On the left sidebar of Google Colab, click the **Folder icon** (Files).
+> 3. Click the **Upload** icon (page with an up arrow) and upload the `.zip` file directly to the Colab workspace.
+> 4. Run the extraction cell to unzip the data.
+
+### Step 4: Run the DSP Pipeline & Model
+Continue running the cells sequentially from top to bottom. 
+* The **Interactive Audio Player** will render directly in the notebook, allowing you to listen to samples and view waveforms/spectrograms.
+* The feature extraction step may take a few minutes to process all 1,200 audio files.
+
+### Step 5: Download Your Results
+In the final steps of the notebook, the script will train the model and generate predictions. Colab will automatically trigger a browser download for two files:
+1. `Pr_9_model.joblib`: trained model
+2. `Pr_9_predictions.csv`: predictions on validation set
