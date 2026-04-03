@@ -3,6 +3,9 @@
 ## Overview
 This project implements a machine learning pipeline designed to categorize environmental audio into 50 classes. Leveraging a training set of 1,200 labeled `.wav` files, the system evaluates unseen audio data and is explicitly tested for resilience against real-world acoustic distortions, including noise injection and band-limiting.
 
+### Dataset: ESC-50 (Environmental Sound Classification)
+For this project, we are utilizing the ESC-50 dataset. It is a labeled collection of 2,000 environmental audio recordings designed specifically to benchmark methods of environmental sound classification.
+
 ## Prerequisites
 Dependencies can be installed with:
 ```
